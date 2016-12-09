@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#result {
+  border-top: 1em lightblue solid;
+  box-sizing: border-box;
+  height: 30vh;
+}
+
+.wrap {
+  height: 70vh;
+  display: flex;
+}
+
+#numblock,
+#operands {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#numblock {
+  background: darkgray;
+  /* width: 65%; */
+  flex: 1;
+}
+
+#numblock div,
+#operands div {
+  display: inline-block;
+  line-height: 80px;
+  /* border: 1px solid red; */
+  height: 25%;
+  text-align: center;
+}
+#numblock div {
+  width: 30%;
+}
+
+#operands {
+  background: lightgray;
+  border-right: 1em #97FFA0 solid;
+  width: 30%;
+}
+
+#operands div {
+  width: 100%;
+}
