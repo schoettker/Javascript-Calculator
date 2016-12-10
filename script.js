@@ -64,6 +64,7 @@ function display(input, parent) {
   if (typeof input == 'string') {
     input = input.replace(/\//g, '÷');
     input = input.replace(/\./g, '\,');
+    input = input.replace(/\*/g, 'x');
   }
   document.getElementById(parent).
     appendChild(document.createTextNode(input));
