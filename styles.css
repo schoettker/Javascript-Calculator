@@ -24,7 +24,7 @@ html, body {
 }
 
 #numblock {
-  background: darkgray;
+  background: darkslategray;
   /* width: 65%; */
   flex: 1;
 }
@@ -32,6 +32,7 @@ html, body {
 #numblock div,
 #operands div {
   display: inline-block;
+  cursor: pointer;
   line-height: 80px;
   /* border: 1px solid red; */
   height: 25%;
@@ -42,7 +43,7 @@ html, body {
 }
 
 #operands {
-  background: lightgray;
+  background: darkgray;
   border-right: 1em #97FFA0 solid;
   width: 30%;
 }
