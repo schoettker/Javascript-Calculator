@@ -33,15 +33,24 @@ html, body {
 #operands div {
   display: inline-block;
   cursor: pointer;
-  line-height: 80px;
+  line-height: 85px;
   /* border: 1px solid red; */
   height: 25%;
   text-align: center;
+  border-radius: 10px;
+  transition: .4s;
 }
 #numblock div {
   width: 30%;
 }
-
+#numblock div:hover,
+#operands div:hover {
+  background: lightgray;
+}
+#numblock div:active,
+#operands div:active {
+  background: #3e2723;
+}
 #operands {
   background: darkgray;
   border-right: 1em #97FFA0 solid;
