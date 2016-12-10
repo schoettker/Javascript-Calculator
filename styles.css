@@ -6,7 +6,7 @@ html, body {
 }
 
 #result {
-  border-top: 1em lightblue solid;
+  border-top: 1em #1de9b6 solid;
   box-sizing: border-box;
   height: 30vh;
 }
@@ -25,13 +25,14 @@ html, body {
   flex-wrap: wrap;
 }
 #numblock {
-  background: darkslategray;
+  background: #424242;
   /* width: 65%; */
   flex: 1;
 }
 #operands {
-  background: darkgray;
-  border-right: 1em #97FFA0 solid;
+  background: #616161;
+  border-right: 1em #00e676 solid;
+  /* border-right: 1em #97FFA0 solid; */
   width: 30%;
 }
 #numblock div,
@@ -53,10 +54,18 @@ html, body {
 }
 #numblock div:hover,
 #operands div:hover {
-  background: lightgray;
+  background: #e0e0e0;
 }
 #numblock div:active,
 #operands div:active {
-  background: lightblue;
+  background: #212121;
 }
 
+#input-current {
+  color: #424242;
+  font-size: 2em;
+}
+#input-history {
+  color: #626262;
+  font-size: 1.5em;
+}
