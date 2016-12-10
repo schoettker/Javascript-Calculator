@@ -3,6 +3,8 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
 }
 
 #result {
@@ -45,6 +47,7 @@ html, body {
   cursor: pointer;
   /* border-radius: 10px; */
   transition: .4s;
+  color: white;
 }
 #numblock div {
   width: 33%;
@@ -54,7 +57,7 @@ html, body {
 }
 #numblock div:hover,
 #operands div:hover {
-  background: #e0e0e0;
+  background: #757575;
 }
 #numblock div:active,
 #operands div:active {
@@ -66,6 +69,6 @@ html, body {
   font-size: 2em;
 }
 #input-history {
-  color: #626262;
+  color: #616161;
   font-size: 1.5em;
 }
