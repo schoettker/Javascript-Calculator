@@ -11,6 +11,7 @@ function addNumsEventListeners() {
     var num = nums[i];
     num.addEventListener('click', function(e) {
       // console.log(this.getAttribute('data-value'));
+      document.getElementById('clear').innerHTML = 'CE';
       checkForInfinity();
       if (toggleReset) {
         str = '';
@@ -26,7 +27,8 @@ function addNumsEventListeners() {
 }
 function addOperandsEventListeners() {
   var operands = document.getElementById('operands').childNodes;
-  for (var i = 0, l = operands.length; i < l; i++) {
+  for (var i = 2, l = operands.length; i < l; i++) {
+    document.getElementById('clear').innerHTML = 'CE';
     var operand = operands[i];
     operand.addEventListener('click', function(e) {
       checkForInfinity();
@@ -50,6 +52,7 @@ function compute() {
       if (str.length >= 3) {
         str = String(eval(str));
         display(eval(str), 'input-history');
+        document.getElementById('clear').innerHTML = 'CLR';
         toggleReset = true;
       }
     });
@@ -69,3 +72,17 @@ function checkForInfinity() {
   if (str === 'Infinity') 
     str = '';
 }
+function clearInput() {
+  document.getElementById('clear')
+    .addEventListener('click', function(e) {
+      if (this.innerHTML === 'CE') {
+        str = str.slice(0, str.length - 1);
+      }
+      if (this.innerHTML === 'CLR') {
+        str = '';
+        display(str, 'input-history');
+      }
+      display(str, 'input-current');
+    });
+}
+clearInput();
