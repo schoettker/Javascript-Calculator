@@ -35,7 +35,7 @@ html, body {
   background: #616161;
   border-right: 1em #00e676 solid;
   /* border-right: 1em #97FFA0 solid; */
-  width: 30%;
+  width: 20%;
 }
 #numblock div,
 #operands div {
@@ -43,7 +43,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
   cursor: pointer;
   /* border-radius: 10px; */
   transition: .4s;
@@ -51,9 +50,12 @@ html, body {
 }
 #numblock div {
   width: 33%;
+  height: 25%;
 }
 #operands div {
   width: 100%;
+  height: 20%;
+  font-size: .8em;
 }
 #numblock div:hover,
 #operands div:hover {
@@ -72,3 +74,12 @@ html, body {
   color: #616161;
   font-size: 1.5em;
 }
+/* #clear { */
+/*   /1* float: right; *1/ */
+/*   font-weight: 100; */
+/*   background: #ff1744; */
+/*   width: 1em; */
+/*   color: white; */
+/*   font-size: 14px; */
+/*   height: 100%; */
+/* } */
