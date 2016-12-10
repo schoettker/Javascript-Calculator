@@ -74,8 +74,8 @@ html, body {
   color: #616161;
   font-size: 1.5em;
 }
-@media (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    font-size: 32px;
-  }
-}
+/* @media (-webkit-min-device-pixel-ratio: 2) { */
+/*   body { */
+/*     font-size: 32px; */
+/*   } */
+/* } */
