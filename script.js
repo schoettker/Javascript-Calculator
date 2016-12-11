@@ -87,3 +87,8 @@ function clearInput() {
     });
 }
 clearInput();
+// workaround for safaris default pinched in zoom on mobile devices
+document.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+});
+})
